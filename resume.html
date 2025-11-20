@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Awais — Data Scientist Portfolio / CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#6ee7b7; /* mint */
+      --glass: rgba(255,255,255,0.03);
+      --white: #e6eef6;
+      --maxw: 980px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:var(--white);background:linear-gradient(180deg,#071021 0%, #071826 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:320px 1fr;gap:28px}
+
+    /* Sidebar */
+    .side{padding:20px;background:var(--card);border-radius:12px;height:100%;position:relative}
+    .avatar{width:98px;height:98px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:32px;color:#042025;margin-bottom:18px}
+    .name{font-size:20px;font-weight:700;margin:0}
+    .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .contact{margin-top:18px;font-size:14px;line-height:1.6}
+    .contact a{color:var(--white);text-decoration:none}
+    .section-title{margin-top:22px;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:8px;font-size:13px;color:var(--white)}
+
+    /* Main */
+    .main{padding:22px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.009));border-radius:12px}
+    .summary{font-size:15px;color:var(--muted);line-height:1.6}
+    .block{margin-top:16px}
+    h3{margin:0;font-size:16px;color:var(--white)}
+    .job{margin-top:10px;padding:14px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.003));border-radius:10px}
+    .job .role{display:flex;justify-content:space-between;align-items:center}
+    .job .role .title{font-weight:700}
+    .job .period{font-size:13px;color:var(--muted)}
+    ul{margin:10px 0 0 18px;color:var(--muted)}
+
+    /* Projects grid */
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:10px}
+    .project{padding:12px;border-radius:10px;background:var(--glass)}
+    .project p{margin:8px 0 0;color:var(--muted);font-size:14px}
+    .project a{display:inline-block;margin-top:6px;padding:6px 10px;border-radius:8px;background:var(--accent);color:#042025;text-decoration:none;font-weight:600;font-size:13px;transition:0.2s;}
+    .project a:hover{background:#34d399;}
+
+    .edu{display:flex;justify-content:space-between;align-items:center}
+    .edu .school{font-weight:600}
+
+    .actions{position:absolute;bottom:18px;left:20px;right:20px;display:flex;gap:10px}
+    .btn{padding:10px 12px;border-radius:10px;border:0;background:transparent;color:var(--accent);cursor:pointer;font-weight:700;text-align:center}
+    .btn.ghost{background:transparent;border:1px dashed rgba(110,231,183,0.12);color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:860px){
+      .container{grid-template-columns:1fr; padding:18px}
+      .actions{position:static;margin-top:18px}
+    }
+
+    /* Print tweaks */
+    @media print{
+      body{background:white;color:black}
+      .container{box-shadow:none;background:transparent}
+      .side{background:transparent}
+      .main{background:transparent}
+      .btn, .actions {display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <aside class="side" aria-label="sidebar">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="avatar-container"><img class="avatar" src="profile.jpeg" /></div>
+        <div>
+          <div class="name">Ahmed Awais</div>
+          <div class="meta">Data Scientist — Karachi, Pakistan</div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <div><strong>GitHub:</strong> <a href="https://github.com/AwaisDS" target="_blank" rel="noopener">github.com/AwaisDS</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+923131499961">+92 3131499961</a></div>
+        <div><strong>Email:</strong> <a href="mailto:ahmed.awais.ds@gmail.com">ahmed.awais.ds@gmail.com</a></div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmed-awais-4577322a4/" target="_blank" rel="noopener">linkedin.com/in/ahmed-awais-4577322a4</a></div>
+        <div style="margin-top:8px;color:var(--muted);font-size:13px">Karachi, Pakistan</div>
+      </div>
+
+      <div class="section-title">Technical Skills</div>
+      <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">NumPy</div>
+        <div class="skill">Data Viz</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Model Eval</div>
+      </div>
+
+      <div class="section-title">Soft Skills</div>
+      <div class="skill-list" style="margin-bottom:12px">
+        <div class="skill">Communication</div>
+        <div class="skill">Presentation</div>
+        <div class="skill">Storytelling</div>
+      </div>
+
+      <div class="section-title">Courses</div>
+      <div style="margin-top:8px;color:var(--muted);font-size:14px">
+        Ai and Data Science Specialization — Saylani Mass IT Training (SMIT)<br>
+        Machine Learning Specialization — DeepLearning.ai / Coursera
+      </div>
+
+      <div class="actions">
+        <!-- Updated Download button to download DOCX file -->
+        <a class="btn" href="my-cv.docx" download>Download Resume</a>
+        <button class="btn ghost" onclick="location.href='mailto:ahmed.awais.ds@gmail.com?subject=Opportunity'">Contact</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <section>
+        <div class="section-title">Summary</div> 
+        <div class="summary">Passionate about uncovering insights from data with proficiency in Python, pandas, and data visualization. Experienced in end-to-end data science workflows, including EDA, feature engineering, model development, and evaluation. Skilled in building organized project pipelines using tools like VS Code and GitHub. Dedicated to solving real-world problems through data-driven approaches and continuous learning.</div>
+      </section>
+
+      <section class="block">
+        <h3>Experience</h3>
+        <div class="job">
+          <div class="role">
+            <div>
+              <div class="title">Python Intern — GROW INTERN</div>
+              <div class="period">March 2024 – April 2024</div>
+            </div>
+          </div>
+          <ul>
+            <li>Gained hands-on experience as a Python intern, successfully developing two projects: a weather app and a URL shortener.</li>
+            <li>Proficient in Python programming and delivering practical, real-world applications.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <strong>Pakistan Crime Analysis</strong>
+            <p>Utilized Python and Pandas to process and clean data, and Matplotlib/Seaborn for visualizations to highlight crime rates across various regions. This project enhanced my ability to work with real-world datasets and draw actionable insights from complex data.</p>
+            <a href="https://github.com/AwaisDS/DS-Basic-Projects/tree/main/Pak-Crime-Analysis" target="_blank">View GitHub Repo</a>
+          </div>
+
+          <div class="project">
+            <strong>SpaceX Launch Prediction</strong>
+            <p>Built a SpaceX launch success prediction model by analyzing historical launch data combined with external weather information. Performed end-to-end data cleaning, feature engineering, and exploratory analysis using Pandas and NumPy, followed by training machine learning models to predict launch outcomes. Discovered key factors influencing successful launches—such as launch site, payload mass, rocket type, and weather conditions—and visualized these insights using Matplotlib.</p>
+            <a href="https://github.com/AwaisDS/Smit_hackathon_ai_datascience" target="_blank">View GitHub Repo</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Education</h3>
+        <div class="job" style="padding:12px">
+          <div class="edu">
+            <div>
+              <div class="school">B.S in Software Engineering — Bahria University, Karachi</div>
+              <div style="font-size:13px;color:var(--muted)">Expected Sep 2027</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h3>Achievements</h3>
+        <ul>
+          <li>5th Position in TeknoFest Data Wrangling Competition</li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    // Optional: small accessibility enhancements
+    (function(){
+      document.querySelectorAll('.btn').forEach(b=>b.addEventListener('keydown',e=>{if(e.key==='Enter')b.click()}));
+    })();
+  </script>
+</body>
+</html>
